@@ -1,0 +1,10 @@
+drop table TRAVELPAYMENT;
+drop table STATIONTOBUS;
+drop table BUSDRIVER;
+drop table PASSENGER;
+drop table BUSRIDE;
+drop table DRIVER;
+drop table STATION;
+drop table BUSLINE;
+drop table BUS;
+drop table TICKET;
