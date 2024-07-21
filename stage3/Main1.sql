@@ -1,189 +1,151 @@
-﻿CREATE OR REPLACE FUNCTION Driver_Bonus(percent IN NUMBER, threshold_hour IN INTEGER)
+CREATE OR REPLACE FUNCTION Driver_Bonus(percent IN NUMBER, threshold_hour IN INTEGER)
 RETURN SYS_REFCURSOR IS
-  message VARCHAR2(100); -- משתנה לאחסון הודעת שגיאה
-  CURSOR c_drivers IS -- קורסור לקריאת הנהגים מבטבלת DRIVER
+  message VARCHAR2(100); 
+   CURSOR c_drivers IS 
     SELECT idriver, name, salary, work_hours
     FROM driver
     FOR UPDATE OF salary;
 
   result_cursor SYS_REFCURSOR;
 
-  illegal_hour EXCEPTION; -- חריגה לשעות סף לא חוקיות
-  illegal_percent EXCEPTION; -- חריגה לאחוז לא חוקי
-  v_new_salary NUMBER; -- משתנה לחישוב השכר החדש
-  max_work_hours CONSTANT INTEGER := 182; -- קבוע עבור מקסימום שעות עבודה
+  illegal_hour EXCEPTION; 
+  illegal_percent EXCEPTION; 
+  v_new_salary NUMBER; 
+  max_work_hours CONSTANT INTEGER := 182; 
 
 BEGIN
-  -- בדיקת תקינות הקלט
   IF threshold_hour < 150 OR threshold_hour > max_work_hours THEN
-    message := 'Threshold hour should be an integer between 150 to 182'; -- הודעת שגיאה לסף שעות
-    RAISE illegal_hour; -- זריקת חריגה
+    message := 'Threshold hour should be an integer between 150 to 182';
+    RAISE illegal_hour; 
   END IF;
-
   IF percent <= 0 OR percent > 100 THEN
-    message := 'Percent should be a number between 1 to 100'; -- הודעת שגיאה לאחוז
-    RAISE illegal_percent; -- זריקת חריגה
+    message := 'Percent should be a number between 1 to 100'; 
+    RAISE illegal_percent; 
   END IF;
-
-  -- פעולות DML - עדכון השכר לפי הפרמטרים הנתונים
   FOR driver IN c_drivers LOOP
-    -- בדיקה אם שעות העבודה של הנהג נמצאות בטווח המותר
     IF driver.work_hours BETWEEN 150 AND 182 THEN
-      v_new_salary := driver.salary + ((driver.salary * percent) / 100); -- חישוב השכר החדש
-
-      -- עדכון השכר של הנהג בטבלה
+      v_new_salary := driver.salary + ((driver.salary * percent) / 100); 
       UPDATE driver
       SET salary = v_new_salary
-      WHERE CURRENT OF c_drivers; -- עדכון לפי רשומה הנוכחית בקורסור
+      WHERE CURRENT OF c_drivers; 
 
     END IF;
   END LOOP;
 
-  -- ביצוע COMMIT לשמירת השינויים
   COMMIT;
-
-  -- הכנת ה-REF CURSOR להחזרת התוצאות
+ 
   OPEN result_cursor FOR
     SELECT idriver, name,
            salary AS new_salary,
            TRUNC(salary / (1 + (percent / 100))) AS old_salary
     FROM driver
-    WHERE work_hours BETWEEN 150 AND 182; -- בחירת נתונים להחזרה עבור נהגים עם שעות עבודה בטווח
+    WHERE work_hours BETWEEN 150 AND 182; 
 
-  RETURN result_cursor; -- החזרת ה-REF CURSOR לקורא הפונקציה
+  RETURN result_cursor; 
 
 EXCEPTION
   WHEN illegal_hour THEN
-    DBMS_OUTPUT.PUT_LINE(message); -- הדפסת הודעת השגיאה לסף השעות
-    RETURN NULL; -- החזרת ערך NULL במקרה של חריגה
+    DBMS_OUTPUT.PUT_LINE(message); 
+    RETURN NULL; 
   WHEN illegal_percent THEN
-    DBMS_OUTPUT.PUT_LINE(message); -- הדפסת הודעת השגיאה לאחוז
-    RETURN NULL; -- החזרת ערך NULL במקרה של חריגה
+    DBMS_OUTPUT.PUT_LINE(message); 
+    RETURN NULL; 
   WHEN OTHERS THEN
-    DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM); -- הדפסת הודעת שגיאה לא צפויה
-    ROLLBACK; -- ביצוע ROLLBACK במקרה של חריגה
-    RETURN NULL; -- החזרת ערך NULL במקרה של חריגה
+    DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM); 
+    ROLLBACK; 
+    RETURN NULL; 
 END;
 /
-CREATE OR REPLACE FUNCTION Get_Busline_Stations
-RETURN SYS_REFCURSOR IS
-  result_cursor SYS_REFCURSOR;
-
-  -- Cursor explicit
-  CURSOR c_buslines IS
-    SELECT DISTINCT idbusline
-    FROM stationtobus;
-
-  -- Cursor implicit
-  c_stations SYS_REFCURSOR;
-
-  -- Record variable
-  v_station_id station.idstation%TYPE;
-  v_station_name station.name%TYPE;
-
+CREATE OR REPLACE PROCEDURE add_passenger_and_ticket(
+    p_passenger_id NUMBER,
+    p_passenger_name VARCHAR2,
+    p_passenger_phone VARCHAR2,
+    p_passenger_birth_date DATE,
+    p_stored_value NUMBER
+) IS
+    v_profile VARCHAR2(20);
+    v_age NUMBER;
+    v_ticket_number NUMBER;
 BEGIN
-  -- Loop through explicit cursor
-  FOR busline_record IN c_buslines LOOP
-    -- Update the busline record (Example DML operation)
-    UPDATE stationtobus
-    SET idbusline = idbusline -- No actual change, just an example
-    WHERE idbusline = busline_record.idbusline;
-    
-    -- Commit the update
+    -- Calculate the age of the passenger
+    v_age := FLOOR(MONTHS_BETWEEN(SYSDATE, p_passenger_birth_date) / 12);
+
+    -- Determine the profile based on age
+    IF v_age BETWEEN 5 AND 18 THEN
+        v_profile := 'Student';
+    ELSIF v_age BETWEEN 19 AND 29 THEN
+        v_profile := 'Youth';
+    ELSIF v_age BETWEEN 30 AND 65 THEN
+        v_profile := 'Adult';
+    ELSIF v_age > 65 THEN
+        v_profile := 'Senior';
+    ELSE
+        v_profile := 'Invalid'; -- In case the age doesn't fall into any range
+    END IF;
+
+    -- Find the highest ticket number and increment by one
+    SELECT NVL(MAX(idticket), 0) + 1 INTO v_ticket_number FROM ticket;
+
+    -- Insert the ticket into the tickets table
+    INSERT INTO ticket (cardprofile, idticket, accumulatedvalue)
+    VALUES (v_profile, v_ticket_number, p_stored_value);
+
+    -- Insert the passenger into the passengers table
+    INSERT INTO passenger (name, idpassenger, phone, idticket, bdate)
+    VALUES (p_passenger_name, p_passenger_id, p_passenger_phone, v_ticket_number, p_passenger_birth_date);
+
+    -- Commit the transaction
     COMMIT;
-    
-    -- Open implicit cursor
-    OPEN c_stations FOR
-      SELECT s.idstation, s.name
-      FROM stationtobus stb
-      JOIN station s ON stb.idstation = s.idstation
-      WHERE stb.idbusline = busline_record.idbusline;
-    
-    -- Fetch stations for each busline
-    LOOP
-      FETCH c_stations INTO v_station_id, v_station_name;
-      EXIT WHEN c_stations%NOTFOUND;
-      
-      -- Process each station (Example output to DBMS_OUTPUT)
-      DBMS_OUTPUT.PUT_LINE('Busline ID: ' || busline_record.idbusline ||
-                           ', Station ID: ' || v_station_id ||
-                           ', Station Name: ' || v_station_name);
-    END LOOP;
-    
-    -- Close the implicit cursor
-    CLOSE c_stations;
-  END LOOP;
-
-  -- Prepare REF CURSOR result
-  OPEN result_cursor FOR
-    SELECT stb.idbusline, s.idstation, s.name AS station_name
-    FROM stationtobus stb
-    JOIN station s ON stb.idstation = s.idstation
-    ORDER BY stb.idbusline, s.idstation;
-
-  RETURN result_cursor;
 
 EXCEPTION
-  WHEN OTHERS THEN
-    DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
-    RETURN NULL;
+    WHEN OTHERS THEN
+        ROLLBACK;
+        RAISE_APPLICATION_ERROR(-20001, 'An error occurred: ' || SQLERRM);
 END;
 /
 
 DECLARE
+  percent NUMBER := &percent_input;
+  threshold_hour NUMBER := &threshold_hour_input;
+  p_passenger_id NUMBER := &p_passenger_id_input;
+  p_passenger_name VARCHAR2(100) := '&p_passenger_name_input';
+  p_passenger_phone VARCHAR2(15) := '&p_passenger_phone_input';
+  p_passenger_birth_date DATE := TO_DATE('&p_passenger_birth_date_input', 'DD-MM-YYYY');
+  p_stored_value NUMBER := &p_stored_value_input;
+    
   result_bonus SYS_REFCURSOR;
-  result_stations SYS_REFCURSOR;
   idriver NUMBER;
   name VARCHAR2(100);
   new_salary NUMBER;
   old_salary NUMBER;
-  percent NUMBER := 10; -- אחוז העלאת שכר (הכנס ערך חוקי)
-  threshold_hour NUMBER := 160; -- סף שעות העבודה
-
-  -- משתנים עבור תוצאת Get_Busline_Stations
-  busline_id NUMBER;
-  station_id NUMBER;
-  station_name VARCHAR2(100);
 
 BEGIN
-  BEGIN
-    -- קריאה לפונקציה Driver_Bonus
-    result_bonus := Driver_Bonus(percent, threshold_hour);
+  result_bonus := Driver_Bonus(percent, threshold_hour);
 
-    -- הצגת התוצאות של Driver_Bonus
-    LOOP
-      FETCH result_bonus INTO idriver, name, new_salary, old_salary;
-      EXIT WHEN result_bonus%NOTFOUND;
-      DBMS_OUTPUT.PUT_LINE('Driver ID: ' || idriver || 
-                           ', Name: ' || name || 
-                           ', New Salary: ' || new_salary || 
-                           ', Old Salary: ' || TRUNC(old_salary));
-    END LOOP;
+  LOOP
+    FETCH result_bonus INTO idriver, name, new_salary, old_salary;
+    EXIT WHEN result_bonus%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE('Driver ID: ' || idriver || 
+                         ', Name: ' || name || 
+                         ', New Salary: ' || new_salary || 
+                         ', Old Salary: ' || TRUNC(old_salary));
+  END LOOP;
 
-    -- סגירת ה-cursor של Driver_Bonus
-    CLOSE result_bonus;
-  EXCEPTION
-    WHEN OTHERS THEN
-      DBMS_OUTPUT.PUT_LINE('Error in Driver_Bonus: ' || SQLERRM);
-  END;
+  CLOSE result_bonus;
 
-  BEGIN
-    -- קריאה לפונקציה Get_Busline_Stations
-    result_stations := Get_Busline_Stations();
+  add_passenger_and_ticket(
+    p_passenger_id,
+    p_passenger_name,
+    p_passenger_phone,
+    p_passenger_birth_date,
+    p_stored_value
+  );
+  DBMS_OUTPUT.PUT_LINE('Passenger and ticket added successfully.');
 
-    -- הצגת התוצאות של Get_Busline_Stations
-    LOOP
-      FETCH result_stations INTO busline_id, station_id, station_name;
-      EXIT WHEN result_stations%NOTFOUND;
-      DBMS_OUTPUT.PUT_LINE('Busline ID: ' || busline_id || 
-                           ', Station ID: ' || station_id || 
-                           ', Station Name: ' || station_name);
-    END LOOP;
-
-    -- סגירת ה-cursor של Get_Busline_Stations
-    CLOSE result_stations;
-  EXCEPTION
-    WHEN OTHERS THEN
-      DBMS_OUTPUT.PUT_LINE('Error in Get_Busline_Stations: ' || SQLERRM);
-  END;
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
 END;
+/
+
+

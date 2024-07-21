@@ -1,5 +1,5 @@
 ﻿prompt PL/SQL Developer import file
-prompt Created on éåí ùéùé 05 éåìé 2024 by Maayan
+prompt Created on éåí øàùåï 21 éåìé 2024 by Maayan
 set feedback off
 set define off
 prompt Creating BUS...
@@ -808,407 +808,407 @@ commit;
 prompt 176 records loaded
 prompt Loading DRIVER...
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Craig', 534, 2, '56-789-14', 35, 84, 182, 5497);
+values ('Craig', 534, 2, '56-789-14', 35, 84, 182, 5826);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Craig', 535, 3, '67-890-25', 36, 106, 182, 8875);
+values ('Craig', 535, 3, '67-890-25', 36, 106, 182, 4454);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Craig', 536, 4, '78-901-36', 37, 140, 182, 6009);
+values ('Craig', 536, 4, '78-901-36', 37, 140, 182, 5750);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Craig', 537, 5, '89-012-47', 38, 63, 182, 5452);
+values ('Craig', 537, 5, '89-012-47', 38, 63, 182, 4540);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Craig', 538, 6, '90-123-58', 39, 150, 182, 25450);
+values ('Craig', 538, 6, '90-123-58', 39, 150, 182, 9659);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Derek', 539, 7, '01-234-69', 40, 59, 182, 8982);
+values ('Derek', 539, 7, '01-234-69', 40, 59, 182, 5743);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Diana', 540, 8, '12-345-71', 41, 79, 182, 9384);
+values ('Diana', 540, 8, '12-345-71', 41, 79, 182, 4825);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Diane', 541, 9, '23-456-82', 42, 179, 182, 7820765);
+values ('Diane', 541, 9, '23-456-82', 42, 179, 182, 10964);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Dolly', 542, 10, '34-567-93', 43, 55, 182, 11419);
+values ('Dolly', 542, 10, '34-567-93', 43, 55, 182, 5648);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Donna', 543, 11, '45-678-04', 44, 112, 182, 10748);
+values ('Donna', 543, 11, '45-678-04', 44, 112, 182, 4180);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Doris', 544, 12, '56-789-15', 45, 76, 182, 8523);
+values ('Doris', 544, 12, '56-789-15', 45, 76, 182, 4231);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Drew', 545, 13, '67-890-26', 46, 58, 182, 7460);
+values ('Drew', 545, 13, '67-890-26', 46, 58, 182, 5455);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Dolly', 546, 14, '78-901-37', 47, 177, 182, 218339);
+values ('Dolly', 546, 14, '78-901-37', 47, 177, 182, 9854);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Dolly', 547, 15, '89-012-48', 48, 77, 182, 9749);
+values ('Dolly', 547, 15, '89-012-48', 48, 77, 182, 4438);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Edith', 548, 16, '90-123-59', 49, 157, 182, 68098);
+values ('Edith', 548, 16, '90-123-59', 49, 157, 182, 9854);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Edwin', 549, 17, '01-234-60', 50, 82, 182, 7708);
+values ('Edwin', 549, 17, '01-234-60', 50, 82, 182, 4508);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Elena', 550, 18, '12-345-72', 51, 84, 182, 9181);
+values ('Elena', 550, 18, '12-345-72', 51, 84, 182, 5109);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Eli', 551, 19, '23-456-83', 52, 55, 182, 10976);
+values ('Eli', 551, 19, '23-456-83', 52, 55, 182, 5958);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ellie', 552, 20, '34-567-94', 53, 154, 182, 30284);
+values ('Ellie', 552, 20, '34-567-94', 53, 154, 182, 11073);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Elton', 553, 21, '45-678-05', 54, 161, 182, 104721);
+values ('Elton', 553, 21, '45-678-05', 54, 161, 182, 8303);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Emily', 554, 22, '56-789-16', 55, 177, 182, 393257);
+values ('Emily', 554, 22, '56-789-16', 55, 177, 182, 9914);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Emma', 555, 23, '67-890-27', 56, 157, 182, 48427);
+values ('Emma', 555, 23, '67-890-27', 56, 157, 182, 9924);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Erica', 556, 24, '78-901-38', 57, 105, 182, 8737);
+values ('Erica', 556, 24, '78-901-38', 57, 105, 182, 5638);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Erin', 557, 25, '89-012-49', 58, 164, 182, 116452);
+values ('Erin', 557, 25, '89-012-49', 58, 164, 182, 10825);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Edwin', 558, 26, '90-123-60', 59, 69, 182, 9552);
+values ('Edwin', 558, 26, '90-123-60', 59, 69, 182, 5850);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Fiona', 559, 27, '01-234-71', 60, 120, 182, 8072);
+values ('Fiona', 559, 27, '01-234-71', 60, 120, 182, 5660);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Flora', 560, 28, '12-345-73', 61, 40, 182, 11333);
+values ('Flora', 560, 28, '12-345-73', 61, 40, 182, 5025);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Frank', 561, 29, '23-456-84', 62, 180, 182, 303077);
+values ('Frank', 561, 29, '23-456-84', 62, 180, 182, 9320);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Fred', 562, 30, '34-567-95', 63, 199, 182, 375310);
+values ('Fred', 562, 30, '34-567-95', 63, 199, 182, 5727);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Gabe', 563, 31, '45-678-06', 64, 198, 182, 283030);
+values ('Gabe', 563, 31, '45-678-06', 64, 198, 182, 5290);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Gavin', 564, 32, '56-789-17', 65, 193, 182, 284976);
+values ('Gavin', 564, 32, '56-789-17', 65, 193, 182, 5372);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Grace', 565, 33, '67-890-28', 66, 175, 182, 220543);
+values ('Grace', 565, 33, '67-890-28', 66, 175, 182, 10671);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Grant', 566, 34, '78-901-39', 67, 145, 182, 8905);
+values ('Grant', 566, 34, '78-901-39', 67, 145, 182, 4085);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Greg', 567, 35, '89-012-50', 68, 78, 182, 10243);
+values ('Greg', 567, 35, '89-012-50', 68, 78, 182, 5034);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Gwen', 568, 2, '90-123-61', 69, 177, 182, 231662);
+values ('Gwen', 568, 2, '90-123-61', 69, 177, 182, 10050);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Haley', 569, 3, '01-234-72', 70, 53, 182, 8081);
+values ('Haley', 569, 3, '01-234-72', 70, 53, 182, 4695);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Hank', 570, 4, '12-345-74', 71, 114, 182, 6879);
+values ('Hank', 570, 4, '12-345-74', 71, 114, 182, 5181);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Helen', 571, 5, '23-456-85', 72, 176, 182, 186960);
+values ('Helen', 571, 5, '23-456-85', 72, 176, 182, 9621);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Henry', 572, 6, '34-567-96', 73, 156, 182, 39942);
+values ('Henry', 572, 6, '34-567-96', 73, 156, 182, 9683);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Holly', 573, 7, '45-678-07', 74, 149, 182, 4155);
+values ('Holly', 573, 7, '45-678-07', 74, 149, 182, 5479);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Isaac', 574, 8, '56-789-18', 75, 114, 182, 4283);
+values ('Isaac', 574, 8, '56-789-18', 75, 114, 182, 5532);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ivy', 575, 9, '67-890-29', 76, 125, 182, 4152);
+values ('Ivy', 575, 9, '67-890-29', 76, 125, 182, 5079);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jamie', 576, 10, '78-901-40', 77, 88, 182, 10773);
+values ('Jamie', 576, 10, '78-901-40', 77, 88, 182, 5135);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('James', 577, 11, '89-012-51', 78, 37, 182, 10437);
+values ('James', 577, 11, '89-012-51', 78, 37, 182, 5427);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jamie', 578, 12, '90-123-62', 79, 127, 182, 7366);
+values ('Jamie', 578, 12, '90-123-62', 79, 127, 182, 4969);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jane', 579, 13, '01-234-73', 80, 186, 182, 80764);
+values ('Jane', 579, 13, '01-234-73', 80, 186, 182, 4364);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jared', 580, 14, '12-345-75', 81, 184, 182, 83845);
+values ('Jared', 580, 14, '12-345-75', 81, 184, 182, 4890);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jason', 581, 15, '23-456-86', 82, 54, 182, 8732);
+values ('Jason', 581, 15, '23-456-86', 82, 54, 182, 4785);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jenna', 583, 17, '45-678-08', 84, 97, 182, 10414);
+values ('Jenna', 583, 17, '45-678-08', 84, 97, 182, 4427);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jenny', 584, 18, '56-789-19', 85, 178, 182, 402900);
+values ('Jenny', 584, 18, '56-789-19', 85, 178, 182, 11649);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jesse', 585, 19, '67-890-30', 86, 70, 182, 11354);
+values ('Jesse', 585, 19, '67-890-30', 86, 70, 182, 5634);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jill', 586, 20, '78-901-41', 87, 139, 182, 11198);
+values ('Jill', 586, 20, '78-901-41', 87, 139, 182, 5908);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jimmy', 587, 21, '89-012-52', 88, 79, 182, 7588);
+values ('Jimmy', 587, 21, '89-012-52', 88, 79, 182, 5202);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Joan', 588, 22, '90-123-63', 89, 125, 182, 9045);
+values ('Joan', 588, 22, '90-123-63', 89, 125, 182, 5796);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jodie', 589, 23, '01-234-74', 90, 124, 182, 11049);
+values ('Jodie', 589, 23, '01-234-74', 90, 124, 182, 5030);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Joe', 590, 24, '12-345-76', 91, 196, 182, 179951);
+values ('Joe', 590, 24, '12-345-76', 91, 196, 182, 5676);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Joel', 591, 25, '23-456-87', 92, 150, 182, 21666);
+values ('Joel', 591, 25, '23-456-87', 92, 150, 182, 8018);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('John', 592, 26, '34-567-98', 93, 42, 182, 9271);
+values ('John', 592, 26, '34-567-98', 93, 42, 182, 4775);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jonah', 593, 27, '45-678-09', 94, 149, 182, 6752);
+values ('Jonah', 593, 27, '45-678-09', 94, 149, 182, 5323);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Joni', 594, 28, '56-789-20', 95, 57, 182, 8316);
+values ('Joni', 594, 28, '56-789-20', 95, 57, 182, 4684);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Judy', 595, 29, '67-890-31', 96, 71, 182, 10875);
+values ('Judy', 595, 29, '67-890-31', 96, 71, 182, 5033);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Julia', 596, 30, '78-901-42', 97, 153, 182, 30839);
+values ('Julia', 596, 30, '78-901-42', 97, 153, 182, 8181);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Julie', 597, 31, '89-012-53', 98, 170, 182, 174910);
+values ('Julie', 597, 31, '89-012-53', 98, 170, 182, 9939);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Justin', 598, 32, '90-123-64', 99, 161, 182, 85599);
+values ('Justin', 598, 32, '90-123-64', 99, 161, 182, 11172);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Karen', 599, 33, '01-234-75', 100, 52, 182, 10415);
+values ('Karen', 599, 33, '01-234-75', 100, 52, 182, 5214);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kate', 600, 34, '12-345-77', 101, 81, 182, 5541);
+values ('Kate', 600, 34, '12-345-77', 101, 81, 182, 5389);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kathy', 601, 35, '23-456-88', 102, 91, 182, 9894);
+values ('Kathy', 601, 35, '23-456-88', 102, 91, 182, 4150);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kayla', 602, 2, '34-567-99', 103, 52, 182, 9335);
+values ('Kayla', 602, 2, '34-567-99', 103, 52, 182, 4238);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kelly', 604, 4, '56-789-21', 105, 31, 182, 6363);
+values ('Kelly', 604, 4, '56-789-21', 105, 31, 182, 5375);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kevin', 605, 5, '67-890-32', 106, 168, 182, 160344);
+values ('Kevin', 605, 5, '67-890-32', 106, 168, 182, 7847);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kim', 606, 6, '78-901-43', 107, 151, 182, 33245);
+values ('Kim', 606, 6, '78-901-43', 107, 151, 182, 11669);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Kyle', 607, 7, '89-012-54', 108, 42, 182, 5535);
+values ('Kyle', 607, 7, '89-012-54', 108, 42, 182, 4642);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Laura', 608, 8, '90-123-65', 109, 168, 182, 176029);
+values ('Laura', 608, 8, '90-123-65', 109, 168, 182, 9818);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Leila', 609, 9, '01-234-76', 110, 104, 182, 5827);
+values ('Leila', 609, 9, '01-234-76', 110, 104, 182, 4817);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Liam', 610, 10, '12-345-78', 111, 142, 182, 8488);
+values ('Liam', 610, 10, '12-345-78', 111, 142, 182, 5687);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Liz', 613, 13, '45-678-11', 114, 196, 182, 200790);
+values ('Liz', 613, 13, '45-678-11', 114, 196, 182, 4056);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Logan', 614, 14, '56-789-22', 115, 187, 182, 115595);
+values ('Logan', 614, 14, '56-789-22', 115, 187, 182, 5457);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 615, 15, '67-890-33', 116, 188, 182, 207583);
+values ('Louis', 615, 15, '67-890-33', 116, 188, 182, 4528);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Lucy', 616, 16, '78-901-44', 117, 49, 182, 7673);
+values ('Lucy', 616, 16, '78-901-44', 117, 49, 182, 4340);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Lydia', 617, 17, '89-012-55', 118, 138, 182, 11140);
+values ('Lydia', 617, 17, '89-012-55', 118, 138, 182, 4278);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jamie', 618, 18, '90-123-66', 119, 76, 182, 11423);
+values ('Jamie', 618, 18, '90-123-66', 119, 76, 182, 5637);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Jamie', 620, 20, '12-345-79', 121, 98, 182, 7433);
+values ('Jamie', 620, 20, '12-345-79', 121, 98, 182, 4659);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Mandy', 621, 21, '23-456-90', 122, 140, 182, 10351);
+values ('Mandy', 621, 21, '23-456-90', 122, 140, 182, 4691);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Maria', 622, 22, '34-567-01', 123, 199, 182, 173834);
+values ('Maria', 622, 22, '34-567-01', 123, 199, 182, 4929);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Marie', 623, 23, '45-678-12', 124, 189, 182, 225194);
+values ('Marie', 623, 23, '45-678-12', 124, 189, 182, 5086);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Mark', 624, 24, '56-789-23', 125, 172, 182, 259289);
+values ('Mark', 624, 24, '56-789-23', 125, 172, 182, 8580);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Mason', 625, 25, '67-890-34', 126, 142, 182, 11195);
+values ('Mason', 625, 25, '67-890-34', 126, 142, 182, 5151);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Matt', 626, 26, '78-901-45', 127, 46, 182, 5960);
+values ('Matt', 626, 26, '78-901-45', 127, 46, 182, 4199);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Mel', 628, 28, '90-123-67', 129, 119, 182, 8979);
+values ('Mel', 628, 28, '90-123-67', 129, 119, 182, 5809);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Mia', 629, 29, '01-234-78', 130, 74, 182, 9774);
+values ('Mia', 629, 29, '01-234-78', 130, 74, 182, 4481);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Mike', 630, 30, '12-345-80', 131, 148, 182, 10568);
+values ('Mike', 630, 30, '12-345-80', 131, 148, 182, 5378);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Molly', 631, 31, '23-456-91', 132, 140, 182, 10814);
+values ('Molly', 631, 31, '23-456-91', 132, 140, 182, 4215);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nancy', 632, 32, '34-567-02', 133, 98, 182, 8831);
+values ('Nancy', 632, 32, '34-567-02', 133, 98, 182, 5134);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Naomi', 633, 33, '45-678-13', 134, 149, 182, 6700);
+values ('Naomi', 633, 33, '45-678-13', 134, 149, 182, 4069);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nell', 634, 34, '56-789-24', 135, 98, 182, 8098);
+values ('Nell', 634, 34, '56-789-24', 135, 98, 182, 5213);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nelly', 635, 35, '67-890-35', 136, 185, 182, 132659);
+values ('Nelly', 635, 35, '67-890-35', 136, 185, 182, 4746);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nikki', 637, 3, '89-012-57', 138, 107, 182, 7658);
+values ('Nikki', 637, 3, '89-012-57', 138, 107, 182, 4467);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nina', 638, 4, '90-123-68', 139, 110, 182, 4449);
+values ('Nina', 638, 4, '90-123-68', 139, 110, 182, 5285);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Noah', 639, 5, '01-234-79', 140, 146, 182, 8299);
+values ('Noah', 639, 5, '01-234-79', 140, 146, 182, 5665);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nora', 640, 6, '12-345-81', 141, 144, 182, 5681);
+values ('Nora', 640, 6, '12-345-81', 141, 144, 182, 4344);
 commit;
 prompt 100 records committed...
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 641, 7, '23-456-92', 142, 81, 182, 6685);
+values ('Louis', 641, 7, '23-456-92', 142, 81, 182, 4390);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Oscar', 642, 8, '34-567-03', 143, 137, 182, 4010);
+values ('Oscar', 642, 8, '34-567-03', 143, 137, 182, 4877);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 643, 9, '45-678-14', 144, 112, 182, 8905);
+values ('Louis', 643, 9, '45-678-14', 144, 112, 182, 5427);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Paula', 645, 11, '67-890-36', 146, 183, 182, 116444);
+values ('Paula', 645, 11, '67-890-36', 146, 183, 182, 5464);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Pearl', 646, 12, '78-901-47', 147, 137, 182, 6729);
+values ('Pearl', 646, 12, '78-901-47', 147, 137, 182, 4794);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Penny', 647, 13, '89-012-58', 148, 61, 182, 11445);
+values ('Penny', 647, 13, '89-012-58', 148, 61, 182, 5320);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Peter', 648, 14, '90-123-69', 149, 86, 182, 6392);
+values ('Peter', 648, 14, '90-123-69', 149, 86, 182, 5964);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Phil', 649, 15, '01-234-80', 150, 104, 182, 8238);
+values ('Phil', 649, 15, '01-234-80', 150, 104, 182, 4660);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Polly', 650, 16, '12-345-82', 151, 158, 182, 53913);
+values ('Polly', 650, 16, '12-345-82', 151, 158, 182, 8426);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Quinn', 651, 17, '23-456-93', 152, 51, 182, 10774);
+values ('Quinn', 651, 17, '23-456-93', 152, 51, 182, 5370);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ray', 653, 19, '45-678-15', 154, 159, 182, 74330);
+values ('Ray', 653, 19, '45-678-15', 154, 159, 182, 11601);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Reese', 654, 20, '56-789-26', 155, 41, 182, 10077);
+values ('Reese', 654, 20, '56-789-26', 155, 41, 182, 5751);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Renee', 655, 21, '67-890-37', 156, 53, 182, 10875);
+values ('Renee', 655, 21, '67-890-37', 156, 53, 182, 5435);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Rhys', 656, 22, '78-901-48', 157, 32, 182, 9589);
+values ('Rhys', 656, 22, '78-901-48', 157, 32, 182, 4014);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Riley', 658, 24, '90-123-70', 159, 192, 182, 179862);
+values ('Riley', 658, 24, '90-123-70', 159, 192, 182, 5613);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Robin', 659, 25, '01-234-81', 160, 120, 182, 11343);
+values ('Robin', 659, 25, '01-234-81', 160, 120, 182, 4120);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Rosa', 661, 27, '23-456-94', 162, 98, 182, 10196);
+values ('Rosa', 661, 27, '23-456-94', 162, 98, 182, 4600);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Rose', 662, 28, '34-567-05', 163, 153, 182, 20875);
+values ('Rose', 662, 28, '34-567-05', 163, 153, 182, 8287);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ruby', 663, 29, '45-678-16', 164, 66, 182, 7573);
+values ('Ruby', 663, 29, '45-678-16', 164, 66, 182, 5933);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ryan', 664, 30, '56-789-27', 165, 53, 182, 8527);
+values ('Ryan', 664, 30, '56-789-27', 165, 53, 182, 5023);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Sally', 665, 31, '67-890-38', 166, 40, 182, 11087);
+values ('Sally', 665, 31, '67-890-38', 166, 40, 182, 5869);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Sam', 666, 32, '78-901-49', 167, 73, 182, 6470);
+values ('Sarah', 667, 33, '89-012-60', 168, 180, 182, 10772);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Sarah', 667, 33, '89-012-60', 168, 180, 182, 314377);
+values ('Sean', 669, 35, '01-234-82', 170, 97, 182, 4452);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Sean', 669, 35, '01-234-82', 170, 97, 182, 7435);
+values ('Seth', 670, 2, '12-345-84', 171, 134, 182, 4509);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Seth', 670, 2, '12-345-84', 171, 134, 182, 7686);
+values ('Shane', 671, 3, '23-456-95', 172, 163, 182, 7983);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Shane', 671, 3, '23-456-95', 172, 163, 182, 100977);
+values ('Shawn', 672, 4, '34-567-06', 173, 190, 182, 5200);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Shawn', 672, 4, '34-567-06', 173, 190, 182, 154266);
+values ('Simon', 673, 5, '45-678-17', 174, 184, 182, 5388);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Simon', 673, 5, '45-678-17', 174, 184, 182, 174585);
+values ('Sonia', 674, 6, '56-789-28', 175, 199, 182, 5504);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Sonia', 674, 6, '56-789-28', 175, 199, 182, 242115);
+values ('Stacy', 675, 7, '67-890-39', 176, 189, 182, 4102);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Stacy', 675, 7, '67-890-39', 176, 189, 182, 175095);
+values ('Louis', 677, 9, '89-012-61', 178, 136, 182, 5351);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 677, 9, '89-012-61', 178, 136, 182, 5813);
+values ('Sybil', 678, 10, '90-123-72', 179, 50, 182, 4400);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Sybil', 678, 10, '90-123-72', 179, 50, 182, 11107);
+values ('Terry', 679, 11, '01-234-83', 180, 58, 182, 5848);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Terry', 679, 11, '01-234-83', 180, 58, 182, 5725);
+values ('Tim', 680, 12, '12-345-85', 181, 45, 182, 5405);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Tim', 680, 12, '12-345-85', 181, 45, 182, 7933);
+values ('Louis', 681, 13, '23-456-96', 182, 174, 182, 11239);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 681, 13, '23-456-96', 182, 174, 182, 237132);
+values ('Toby', 682, 14, '34-567-07', 183, 130, 182, 5742);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Toby', 682, 14, '34-567-07', 183, 130, 182, 10810);
+values ('Todd', 683, 15, '45-678-18', 184, 199, 182, 4430);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Todd', 683, 15, '45-678-18', 184, 199, 182, 364446);
+values ('Tony', 685, 17, '67-890-40', 186, 159, 182, 11655);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Tony', 685, 17, '67-890-40', 186, 159, 182, 66430);
+values ('Tracy', 686, 18, '78-901-51', 187, 163, 182, 9067);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Tracy', 686, 18, '78-901-51', 187, 163, 182, 113190);
+values ('Tyler', 687, 19, '89-012-62', 188, 101, 182, 5589);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Tyler', 687, 19, '89-012-62', 188, 101, 182, 6919);
+values ('Vera', 688, 20, '90-123-73', 189, 188, 182, 5410);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Vera', 688, 20, '90-123-73', 189, 188, 182, 111151);
+values ('Vicky', 689, 21, '01-234-84', 190, 89, 182, 5773);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Vicky', 689, 21, '01-234-84', 190, 89, 182, 10705);
+values ('Vince', 690, 22, '12-345-86', 191, 105, 182, 5105);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Vince', 690, 22, '12-345-86', 191, 105, 182, 8391);
+values ('Wendy', 691, 23, '23-456-97', 192, 34, 182, 5950);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Wendy', 691, 23, '23-456-97', 192, 34, 182, 8933);
+values ('Willa', 693, 25, '45-678-19', 194, 62, 182, 5244);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Willa', 693, 25, '45-678-19', 194, 62, 182, 6799);
+values ('Louis', 694, 26, '56-789-30', 195, 183, 182, 4494);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 694, 26, '56-789-30', 195, 183, 182, 73976);
+values ('Yara', 695, 27, '67-890-41', 196, 167, 182, 9727);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Yara', 695, 27, '67-890-41', 196, 167, 182, 162618);
+values ('Louis', 696, 28, '78-901-52', 197, 91, 182, 4334);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 696, 28, '78-901-52', 197, 91, 182, 7772);
+values ('Yvonne', 697, 29, '89-012-63', 198, 181, 182, 11175);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Yvonne', 697, 29, '89-012-63', 198, 181, 182, 254333);
+values ('Zack', 698, 30, '90-123-74', 199, 92, 182, 4321);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Zack', 698, 30, '90-123-74', 199, 92, 182, 6961);
+values ('Zoe', 699, 31, '01-234-85', 200, 193, 182, 5146);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Zoe', 699, 31, '01-234-85', 200, 193, 182, 153866);
+values ('Abby', 501, 3, '23-456-78', 2, 70, 182, 5769);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Abby', 501, 3, '23-456-78', 2, 70, 182, 8915);
+values ('Adam', 502, 4, '34-567-89', 3, 195, 182, 4337);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Adam', 502, 4, '34-567-89', 3, 195, 182, 243738);
+values ('Alan', 503, 5, '45-678-90', 4, 76, 182, 4813);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Alan', 503, 5, '45-678-90', 4, 76, 182, 7218);
+values ('Alex', 504, 6, '56-789-01', 5, 87, 182, 4117);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Alex', 504, 6, '56-789-01', 5, 87, 182, 6671);
+values ('Alice', 505, 7, '67-890-12', 6, 157, 182, 9458);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Alice', 505, 7, '67-890-12', 6, 157, 182, 63052);
+values ('Allie', 506, 8, '78-901-23', 7, 40, 182, 4486);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Allie', 506, 8, '78-901-23', 7, 40, 182, 6838);
+values ('Andy', 508, 10, '90-123-45', 9, 94, 182, 4077);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Andy', 508, 10, '90-123-45', 9, 94, 182, 5887);
+values ('Amy', 509, 11, '01-234-56', 10, 62, 182, 4815);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Amy', 509, 11, '01-234-56', 10, 62, 182, 9684);
+values ('Andy', 510, 12, '12-345-68', 11, 81, 182, 4968);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Andy', 510, 12, '12-345-68', 11, 81, 182, 11101);
+values ('Anna', 511, 13, '23-456-79', 12, 48, 182, 4895);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Anna', 511, 13, '23-456-79', 12, 48, 182, 6021);
+values ('Annie', 512, 14, '34-567-80', 13, 41, 182, 4672);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Annie', 512, 14, '34-567-80', 13, 41, 182, 8665);
+values ('April', 513, 15, '45-678-91', 14, 122, 182, 4364);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('April', 513, 15, '45-678-91', 14, 122, 182, 7415);
+values ('Ariel', 514, 16, '56-789-02', 15, 119, 182, 4507);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ariel', 514, 16, '56-789-02', 15, 119, 182, 10997);
+values ('Bella', 516, 18, '78-901-24', 17, 57, 182, 5729);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Bella', 516, 18, '78-901-24', 17, 57, 182, 7839);
+values ('Ben', 517, 19, '89-012-35', 18, 115, 182, 5138);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Ben', 517, 19, '89-012-35', 18, 115, 182, 11038);
+values ('Benny', 518, 20, '90-123-46', 19, 138, 182, 5695);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Benny', 518, 20, '90-123-46', 19, 138, 182, 8993);
+values ('Bill', 519, 21, '01-234-57', 20, 40, 182, 4181);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Bill', 519, 21, '01-234-57', 20, 40, 182, 9523);
+values ('Blake', 520, 22, '12-345-69', 21, 99, 182, 5414);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Blake', 520, 22, '12-345-69', 21, 99, 182, 10292);
+values ('Brian', 522, 24, '34-567-81', 23, 185, 182, 4668);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Brett', 521, 23, '23-456-70', 22, 148, 182, 9361);
+values ('Andy', 524, 26, '56-789-03', 25, 129, 182, 5202);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Brian', 522, 24, '34-567-81', 23, 185, 182, 187413);
+values ('Carla', 525, 27, '67-890-14', 26, 116, 182, 5530);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Andy', 524, 26, '56-789-03', 25, 129, 182, 8734);
+values ('Carol', 526, 28, '78-901-25', 27, 130, 182, 4373);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Carla', 525, 27, '67-890-14', 26, 116, 182, 9558);
+values ('Casey', 527, 29, '89-012-36', 28, 81, 182, 5356);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Carol', 526, 28, '78-901-25', 27, 130, 182, 8062);
+values ('Cathy', 528, 30, '90-123-47', 29, 164, 182, 11463);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Casey', 527, 29, '89-012-36', 28, 81, 182, 10097);
+values ('Chad', 529, 31, '01-234-58', 30, 91, 182, 4266);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Cathy', 528, 30, '90-123-47', 29, 164, 182, 70979);
+values ('Andy', 530, 32, '12-345-70', 31, 182, 182, 8504);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Chad', 529, 31, '01-234-58', 30, 91, 182, 9402);
+values ('Clara', 532, 34, '34-567-92', 33, 176, 182, 8809);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Andy', 530, 32, '12-345-70', 31, 182, 182, 483480);
+values ('Andy', 533, 35, '45-678-03', 34, 45, 182, 4786);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Clara', 532, 34, '34-567-92', 33, 176, 182, 175259);
+values ('Keith', 603, 3, '45-678-10', 104, 113, 182, 4243);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Andy', 533, 35, '45-678-03', 34, 45, 182, 8905);
+values ('Linda', 611, 11, '23-456-89', 112, 88, 182, 4416);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Keith', 603, 3, '45-678-10', 104, 113, 182, 6571);
+values ('Maddie', 619, 19, '01-234-77', 120, 117, 182, 4345);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Linda', 611, 11, '23-456-89', 112, 88, 182, 9422);
+values ('Megan', 627, 27, '89-012-56', 128, 109, 182, 5156);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Maddie', 619, 19, '01-234-77', 120, 117, 182, 9035);
+values ('Nick', 636, 2, '78-901-46', 137, 193, 182, 5841);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Megan', 627, 27, '89-012-56', 128, 109, 182, 5535);
+values ('Pam', 644, 10, '56-789-25', 145, 120, 182, 4914);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Nick', 636, 2, '78-901-46', 137, 193, 182, 147397);
+values ('Randy', 652, 18, '34-567-04', 153, 110, 182, 5468);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Pam', 644, 10, '56-789-25', 145, 120, 182, 7131);
+values ('Louis', 660, 26, '12-345-83', 161, 42, 182, 5253);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Randy', 652, 18, '34-567-04', 153, 110, 182, 7674);
+values ('Scott', 668, 34, '90-123-71', 169, 103, 182, 4333);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 660, 26, '12-345-83', 161, 42, 182, 7737);
+values ('Steve', 676, 8, '78-901-50', 177, 123, 182, 5482);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Scott', 668, 34, '90-123-71', 169, 103, 182, 11240);
+values ('Tom', 684, 16, '56-789-29', 185, 33, 182, 4582);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Steve', 676, 8, '78-901-50', 177, 123, 182, 5783);
+values ('Will', 692, 24, '34-567-08', 193, 176, 182, 9180);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Tom', 684, 16, '56-789-29', 185, 33, 182, 8347);
+values ('Louis', 500, 2, '12-345-67', 1, 79, 182, 5325);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Will', 692, 24, '34-567-08', 193, 176, 182, 235039);
+values ('Alvin', 507, 9, '89-012-34', 8, 32, 182, 4651);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 500, 2, '12-345-67', 1, 79, 182, 8868);
+values ('Avery', 515, 17, '67-890-13', 16, 45, 182, 5018);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Alvin', 507, 9, '89-012-34', 8, 32, 182, 7958);
+values ('Bruce', 523, 25, '45-678-92', 24, 78, 182, 4097);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Avery', 515, 17, '67-890-13', 16, 45, 182, 10585);
+values ('Cindy', 531, 33, '23-456-81', 32, 172, 182, 10014);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Bruce', 523, 25, '45-678-92', 24, 78, 182, 7593);
+values ('Lisa', 612, 12, '34-567-00', 113, 188, 182, 4911);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Cindy', 531, 33, '23-456-81', 32, 172, 182, 129922);
+values ('Edwin', 582, 16, '34-567-97', 83, 156, 182, 9354);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Lisa', 612, 12, '34-567-00', 113, 188, 182, 119162);
+values ('Louis', 657, 23, '89-012-59', 158, 68, 182, 4131);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Edwin', 582, 16, '34-567-97', 83, 156, 182, 49405);
+values ('Brett', 521, 23, '23-456-70', 22, 148, 182, 4658);
 insert into DRIVER (name, idriver, seniority, icensenumber, idbusline, work_hours, max_work_hours, salary)
-values ('Louis', 657, 23, '89-012-59', 158, 68, 182, 11295);
+values ('Sam', 666, 32, '78-901-49', 167, 73, 182, 5163);
 commit;
 prompt 200 records loaded
 prompt Loading BUSDRIVER...
@@ -1918,6 +1918,14 @@ values ('Youth', 1400, 63);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Invalid', 1401, 60);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
+values ('Youth', 1402, 4);
+insert into TICKET (cardprofile, idticket, accumulatedvalue)
+values ('Youth', 1403, 64);
+insert into TICKET (cardprofile, idticket, accumulatedvalue)
+values ('Youth', 1404, 56);
+insert into TICKET (cardprofile, idticket, accumulatedvalue)
+values ('Invalid', 1405, 25);
+insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1101, 101);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1102, 2);
@@ -2013,6 +2021,8 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1000, 0);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('student', 1001, 1);
+commit;
+prompt 100 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1002, 2);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2021,8 +2031,6 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Veteran', 1004, 4);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Regular', 1005, 5);
-commit;
-prompt 100 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('student', 1006, 6);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2215,6 +2223,8 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Regular', 1100, 100);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1147, 147);
+commit;
+prompt 200 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('asoldier', 1148, 148);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2223,8 +2233,6 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Veteran', 1150, 150);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Regular', 1151, 151);
-commit;
-prompt 200 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('student', 1152, 152);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2417,6 +2425,8 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Veteran', 1246, 246);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Regular', 1247, 247);
+commit;
+prompt 300 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('student', 1248, 248);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2425,8 +2435,6 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('asoldier', 1250, 250);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1251, 251);
-commit;
-prompt 300 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Regular', 1252, 252);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2619,6 +2627,8 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Veteran', 1346, 346);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('student', 1347, 347);
+commit;
+prompt 400 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Veteran', 1348, 348);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
@@ -2627,14 +2637,12 @@ insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('Veteran', 1350, 350);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1351, 351);
-commit;
-prompt 400 records committed...
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('student', 1352, 352);
 insert into TICKET (cardprofile, idticket, accumulatedvalue)
 values ('youth', 1353, 353);
 commit;
-prompt 402 records loaded
+prompt 406 records loaded
 prompt Loading PASSENGER...
 insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
 values ('Stan', 342, '088-3456789', 1242, to_date('18-07-1989', 'dd-mm-yyyy'));
@@ -3448,8 +3456,16 @@ insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
 values ('shay', 605, '058-1458796', 1400, to_date('15-02-2000', 'dd-mm-yyyy'));
 insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
 values ('yosi', 606, '054-8596487', 1401, to_date('05-07-2024', 'dd-mm-yyyy'));
+insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
+values ('hadas', 900, '0528745896', 1402, to_date('14-02-2000', 'dd-mm-yyyy'));
+insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
+values ('maayan', 903, '0512214074', 1403, to_date('15-07-2000', 'dd-mm-yyyy'));
+insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
+values ('maayan', 904, '0512214074', 1404, to_date('15-07-2000', 'dd-mm-yyyy'));
+insert into PASSENGER (name, idpassenger, phone, idticket, bdate)
+values ('naama', 906, '0518745698', 1405, to_date('15-08-2019', 'dd-mm-yyyy'));
 commit;
-prompt 402 records loaded
+prompt 406 records loaded
 prompt Loading STATION...
 insert into STATION (name, idstation, adrress)
 values ('44 Beaverton St', 85260, '44 Beaverton St');
@@ -4575,7 +4591,15 @@ commit;
 prompt 555 records loaded
 prompt Loading STATIONTOBUS...
 insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 85260);
+insert into STATIONTOBUS (serial, idbusline, idstation)
 values (26, 65, 79822);
+insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 37296);
+insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 39679);
+insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 50322);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (25, 6, 85260);
 insert into STATIONTOBUS (serial, idbusline, idstation)
@@ -4585,13 +4609,23 @@ values (21, 54, 98563);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (12, 96, 74312);
 insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 29757);
+insert into STATIONTOBUS (serial, idbusline, idstation)
 values (4, 111, 78914);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (14, 67, 31905);
 insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 65642);
+insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 47843);
+insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 19299);
+insert into STATIONTOBUS (serial, idbusline, idstation)
 values (30, 173, 53302);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (29, 56, 50322);
+insert into STATIONTOBUS (serial, idbusline, idstation)
+values (5, 65, 23866);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (12, 137, 42785);
 insert into STATIONTOBUS (serial, idbusline, idstation)
@@ -4756,6 +4790,8 @@ insert into STATIONTOBUS (serial, idbusline, idstation)
 values (27, 50, 98563);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (21, 42, 13434);
+commit;
+prompt 100 records committed...
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (7, 50, 89932);
 insert into STATIONTOBUS (serial, idbusline, idstation)
@@ -4774,8 +4810,6 @@ insert into STATIONTOBUS (serial, idbusline, idstation)
 values (14, 37, 18528);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (7, 57, 74312);
-commit;
-prompt 100 records committed...
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (11, 20, 35274);
 insert into STATIONTOBUS (serial, idbusline, idstation)
@@ -4797,7 +4831,7 @@ values (1, 54, 73180);
 insert into STATIONTOBUS (serial, idbusline, idstation)
 values (1, 111, 73180);
 commit;
-prompt 110 records loaded
+prompt 119 records loaded
 prompt Loading TRAVELPAYMENT...
 insert into TRAVELPAYMENT (traveltime, travelcost, idticket, licensenumber)
 values (to_date('01-08-2024 11:30:00', 'dd-mm-yyyy hh24:mi:ss'), 10, 1067, '89-012-50');
