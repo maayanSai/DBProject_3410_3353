@@ -86,28 +86,20 @@ BEGIN
     -- קריאה לפונקציה Get_Busline_Info
     result_cursor := Get_Busline_Info(p_line_id);
 
-    -- קריאת השורה הראשונה מה-cursor להוצאת זמן המסלול
+LOOP
     FETCH result_cursor INTO v_idbusline, v_idstation, v_station_name, v_total_duration;
-    
-    -- בדיקה אם לא נמצאו נתונים
-    IF result_cursor%NOTFOUND THEN
-        DBMS_OUTPUT.PUT_LINE('No data found for the given bus line.');
-    ELSE
-        -- הדפסת זמן המסלול
-        DBMS_OUTPUT.PUT_LINE('Total Duration: ' || v_total_duration || ' minutes');
-     
+    EXIT WHEN result_cursor%NOTFOUND;
 
-        -- המשך לולאה להדפסת שאר התחנות
-        LOOP
-            FETCH result_cursor INTO v_idbusline, v_idstation, v_station_name, v_total_duration;
-            EXIT WHEN result_cursor%NOTFOUND;
-            DBMS_OUTPUT.PUT_LINE('Bus Line ID: ' || v_idbusline || 
-                                 ', Station ID: ' || v_idstation || 
-                                 ', Station Name: ' || v_station_name);
-        END LOOP;
-    END IF;
+    DBMS_OUTPUT.PUT_LINE('Station ID: ' || v_idstation || 'Station Name: ' || v_station_name);
+END LOOP;
+    DBMS_OUTPUT.PUT_LINE('-----------------------------');
+    DBMS_OUTPUT.PUT_LINE('Total Duration: ' || v_total_duration || ' minutes');
+
+
 
     CLOSE result_cursor;
+    
+    DBMS_OUTPUT.PUT_LINE('');
 
     -- קריאה לפרוצדורה GetBusLineDepartureTimes להדפסת זמני היציאה
     DBMS_OUTPUT.PUT_LINE('Departure Times for Bus Line ID: ' || p_line_id);

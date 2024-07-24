@@ -1,6 +1,7 @@
 CREATE OR REPLACE FUNCTION Driver_Bonus(percent IN NUMBER, threshold_hour IN INTEGER)
 RETURN SYS_REFCURSOR IS
   message VARCHAR2(100); 
+  
    CURSOR c_drivers IS 
     SELECT idriver, name, salary, work_hours
     FROM driver
@@ -23,7 +24,7 @@ BEGIN
     RAISE illegal_percent; 
   END IF;
   FOR driver IN c_drivers LOOP
-    IF driver.work_hours BETWEEN 150 AND 182 THEN
+    IF driver.work_hours BETWEEN threshold_hour AND max_work_hours THEN
       v_new_salary := driver.salary + ((driver.salary * percent) / 100); 
       UPDATE driver
       SET salary = v_new_salary
@@ -56,6 +57,7 @@ EXCEPTION
     RETURN NULL; 
 END;
 /
+
 CREATE OR REPLACE PROCEDURE add_passenger_and_ticket(
     p_passenger_id NUMBER,
     p_passenger_name VARCHAR2,
